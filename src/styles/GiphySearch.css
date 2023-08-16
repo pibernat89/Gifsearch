@@ -1,0 +1,92 @@
+/* Styles for the button element */
+button {
+    height: 33px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background: linear-gradient(to bottom,aquamarine, aqua);
+    color: rgb(2, 0, 41);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the button when hovered */
+button:hover {
+  background: rgb(2,0,41);
+  color: aquamarine;
+  border: aquamarine solid 1px;
+  transition: 1s;
+}
+
+/* Media query for screens up to 768px */
+ @media (max-width: 768px) {
+  button {
+    height: 33px;
+    width: 80px; 
+  }
+  button:hover {
+    background: rgb(2, 0, 41);
+    color: aquamarine;
+    border: aquamarine solid 1px;
+    transition: 1s;
+  }
+}
+
+/* Media query for screens up to 428px */
+@media (max-width: 428px) {
+  button {
+    height: 37px;
+    width: 80px; 
+  }
+
+  button:hover {
+    background-color: rgb(2, 0, 41);
+    color: aquamarine;
+    border: aquamarine solid 1px;
+    transition: 1s;
+  }
+}
+
+/* Styles for the input element */
+input {
+    height: 28px;
+    width: 160px;
+    padding-left: 10px;
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the .gif-img class */
+.gif-img {
+    width: 200px;
+    height: 200px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+/* Styles for the .gif-grid class */
+.gif-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+  
+  @media (max-width: 768px) {
+    .gif-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 428px) {
+    .gif-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+
+ 
+  
+
+
